@@ -22,26 +22,26 @@ export default function Mentorship() {
           <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6">
             <div className="bento-card p-6 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50">
               <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
-                <i className="ph-bold ph-video-camera text-xl"></i>
+                <i className="ph-bold ph-desktop text-xl"></i>
               </div>
-              <h5 className="font-display font-bold text-zinc-900 mb-2">Live Streaming Ops</h5>
-              <p className="text-sm text-zinc-500 font-light">Teaching the nuances of vMix, multi-camera angles, and broadcast audio mixing.</p>
+              <h5 className="font-display font-bold text-zinc-900 mb-2">ICT & Tech Training</h5>
+              <p className="text-sm text-zinc-500 font-light">Equipping individuals with essential IT skills, digital literacy, and technical problem-solving abilities.</p>
             </div>
 
             <div className="bento-card p-6 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50">
               <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
-                <i className="ph-bold ph-plugs-connected text-xl"></i>
+                <i className="ph-bold ph-video-camera text-xl"></i>
               </div>
-              <h5 className="font-display font-bold text-zinc-900 mb-2">Systems Integration</h5>
-              <p className="text-sm text-zinc-500 font-light">Explaining how to design and build a robust media department from the ground up.</p>
+              <h5 className="font-display font-bold text-zinc-900 mb-2">Media Systems Ops</h5>
+              <p className="text-sm text-zinc-500 font-light">Teaching the nuances of vMix, multi-camera angles, and broadcast audio mixing.</p>
             </div>
 
             <div className="bento-card p-6 rounded-2xl border border-zinc-200 bg-white hover:bg-zinc-50 sm:col-span-2">
               <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
                 <i className="ph-bold ph-strategy text-xl"></i>
               </div>
-              <h5 className="font-display font-bold text-zinc-900 mb-2">Digital Ministry Strategy</h5>
-              <p className="text-sm text-zinc-500 font-light">Helping young leaders understand the strategic importance of social media platforms and comprehensive online engagement in the global market.</p>
+              <h5 className="font-display font-bold text-zinc-900 mb-2">Digital Transformation Strategy</h5>
+              <p className="text-sm text-zinc-500 font-light">Helping leaders understand the strategic importance of digital systems, online engagement, and technology-driven growth in the global market.</p>
             </div>
           </div>
         </div>

@@ -3,10 +3,10 @@ export default function Vision() {
     <section id="vision" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20 fade-in-section">
-          <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-widest mb-4">Ministerial Vision</div>
+          <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-widest mb-4">Professional Vision</div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-zinc-900 mb-6 tracking-tight">The Convergence of ICT Proficiency & Service</h2>
           <p className="text-lg text-zinc-500 leading-relaxed font-light">
-            The professional identity of Bilau Oluwatobi Victor is characterized by a deliberate synthesis of high-level technical certification and dedicated religious service. He operates as an <strong className="text-zinc-900 font-semibold">architect of digital transformation</strong>.
+            The professional identity of Bilau Oluwatobi Victor is characterized by a deliberate synthesis of high-level technical certification and dedicated service. He operates as an <strong className="text-zinc-900 font-semibold">architect of digital transformation</strong>.
           </p>
         </div>
 

@@ -40,7 +40,7 @@ export default function Leadership() {
               His leadership involves moving beyond "emergency digitization" toward a <strong className="text-zinc-900 font-semibold">"digital-first" institutional strategy</strong>. 
             </p>
             <p className="text-lg text-zinc-500 mb-10 leading-relaxed font-light">
-              Institutions leverage these platforms to democratize access to ministerial training, ensuring distance is no longer a barrier. He acts as a change agent, managing major media projects that connect thousands globally.
+              Institutions leverage these platforms to democratize access to training and resources, ensuring distance is no longer a barrier. He acts as a change agent, managing major ICT and media projects that connect thousands globally.
             </p>
             
             <div className="space-y-5">

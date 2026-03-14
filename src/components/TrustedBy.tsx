@@ -17,7 +17,7 @@ export default function TrustedBy() {
         <div className="flex overflow-x-auto sm:flex-wrap justify-start sm:justify-center items-center gap-12 md:gap-16 lg:gap-24 pb-6 sm:pb-0 hide-scrollbar snap-x snap-mandatory fade-in-section w-full [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] sm:[mask-image:none]">
           {logos.map((logo, i) => (
             <a key={i} href="#" className="group flex items-center justify-center min-w-[140px] sm:min-w-0 snap-center transition-transform hover:scale-105">
-              <img src={logo.src} alt={logo.alt} className="h-10 md:h-12 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 drop-shadow-sm"
+              <img src={logo.src} alt={logo.alt} loading="lazy" decoding="async" className="h-10 md:h-12 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 drop-shadow-sm"
                    onError={(e) => { e.currentTarget.outerHTML = `<span class="font-display font-bold text-zinc-400 group-hover:text-zinc-800 transition-colors text-center text-xs tracking-wider leading-tight uppercase">${logo.text}</span>`; }} />
             </a>
           ))}

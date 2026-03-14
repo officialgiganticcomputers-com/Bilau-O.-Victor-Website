@@ -59,7 +59,7 @@ export default function Lightboxes({
           </button>
 
           <div className="relative w-full max-w-5xl px-12 md:px-24 flex flex-col items-center">
-            <img id="lightbox-img" src={galleryData[currentImageIndex].src} alt={galleryData[currentImageIndex].title} className="max-h-[70vh] w-auto object-contain rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.5)] transition-transform duration-300 scale-100" />
+            <img id="lightbox-img" src={galleryData[currentImageIndex].src} alt={galleryData[currentImageIndex].title} loading="lazy" decoding="async" className="max-h-[70vh] w-auto object-contain rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.5)] transition-transform duration-300 scale-100" />
             
             <div className="mt-8 text-center max-w-2xl">
               <h3 id="lightbox-title" className="text-white font-display font-bold text-2xl mb-2">{galleryData[currentImageIndex].title}</h3>

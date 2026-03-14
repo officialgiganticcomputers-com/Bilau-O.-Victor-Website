@@ -31,11 +31,11 @@ export default function Hero({ onOpenVideo }: { onOpenVideo: () => void }) {
             <h1 className="text-5xl lg:text-7xl font-display font-extrabold text-white leading-[1.1] mb-6">
               The Architect of the <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-600">Digital Sanctuary.</span>
-              <span className="block text-3xl md:text-4xl lg:text-5xl text-zinc-300 font-medium tracking-tight mt-4 opacity-90">Where Faith Meets Technology.</span>
+              <span className="block text-3xl md:text-4xl lg:text-5xl text-zinc-300 font-medium tracking-tight mt-4 opacity-90">ICT Expert & Media Systems Architect.</span>
             </h1>
             
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed font-light max-w-xl">
-              The evolution of religious practice in West Africa has reached a critical juncture. This transition is embodied by <strong className="text-zinc-200 font-medium">Bilau Oluwatobi Victor</strong>, widely recognized by his professional and ministerial moniker <strong className="text-amber-400 font-medium">"Gigantic"</strong>.
+              The evolution of digital systems in West Africa has reached a critical juncture. This transition is embodied by <strong className="text-zinc-200 font-medium">Bilau Oluwatobi Victor</strong>, widely recognized by his professional and ministerial moniker <strong className="text-amber-400 font-medium">"Gigantic"</strong>.
             </p>
 
             <div className="flex items-center gap-6 md:gap-10 mb-10 py-5 border-y border-white/10 relative overflow-hidden">
@@ -85,7 +85,7 @@ export default function Hero({ onOpenVideo }: { onOpenVideo: () => void }) {
               </div>
               <div className="p-4 bg-zinc-950/80 relative z-20">
                 <div className="aspect-video bg-zinc-900 rounded-lg border border-white/5 flex items-center justify-center relative overflow-hidden">
-                  <img src="https://i.ibb.co/x8764ZFP/9.jpg" alt="Live Production" className="w-full h-full object-cover opacity-60 mix-blend-luminosity" />
+                  <img src="https://i.ibb.co/x8764ZFP/9.jpg" alt="Live Production" loading="eager" decoding="async" fetchPriority="high" className="w-full h-full object-cover opacity-60 mix-blend-luminosity" />
                   <div className="absolute top-4 left-4 flex items-center gap-2">
                     <div className="px-2 py-1 bg-red-500 text-white text-[10px] font-bold rounded animate-pulse">LIVE</div>
                     <div className="px-2 py-1 bg-zinc-900/80 text-white text-[10px] font-mono rounded backdrop-blur-sm">01:24:05</div>

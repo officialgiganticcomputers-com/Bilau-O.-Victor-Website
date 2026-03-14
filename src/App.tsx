@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutMe from './components/AboutMe';
+import ICTExpertise from './components/ICTExpertise';
 import TrustedBy from './components/TrustedBy';
 import Vision from './components/Vision';
 import Leadership from './components/Leadership';
@@ -50,6 +52,8 @@ export default function App() {
     <div className="bg-zinc-50 text-zinc-800 selection:bg-amber-500 selection:text-white font-sans">
       <Navbar />
       <Hero onOpenVideo={() => setVideoLightboxOpen(true)} />
+      <AboutMe />
+      <ICTExpertise />
       <TrustedBy />
       <Vision />
       <Leadership />

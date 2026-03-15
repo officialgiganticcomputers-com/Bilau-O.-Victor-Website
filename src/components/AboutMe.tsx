@@ -1,3 +1,5 @@
+import CountUp from './CountUp';
+
 export default function AboutMe() {
   return (
     <section id="about" className="py-24 bg-zinc-950 relative overflow-hidden">
@@ -20,15 +22,15 @@ export default function AboutMe() {
               <h3 className="text-xl font-display font-bold text-white mb-6">Years of Experience</h3>
               <div className="space-y-6">
                 <div>
-                  <div className="text-4xl font-bold text-amber-400 mb-1">15+</div>
+                  <CountUp end={15} suffix="+" className="text-4xl font-bold text-amber-400 mb-1 block" />
                   <div className="text-sm text-zinc-400 font-medium">Years in ICT and digital systems</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-amber-400 mb-1">10+</div>
+                  <CountUp end={10} suffix="+" className="text-4xl font-bold text-amber-400 mb-1 block" />
                   <div className="text-sm text-zinc-400 font-medium">Years in media and live streaming</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-amber-400 mb-1">15+</div>
+                  <CountUp end={15} suffix="+" className="text-4xl font-bold text-amber-400 mb-1 block" />
                   <div className="text-sm text-zinc-400 font-medium">Years in training, mentorship, and ministry support</div>
                 </div>
               </div>

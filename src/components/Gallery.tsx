@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Gallery({ onOpenImage }: { onOpenImage: (index: number) => void }) {
   return (
     <section id="gallery" className="py-32 bg-white relative border-t border-zinc-200/50">
@@ -68,10 +70,10 @@ export default function Gallery({ onOpenImage }: { onOpenImage: (index: number) 
         </div>
 
         <div className="text-center mt-16 fade-in-section">
-          <a href="#contact" className="inline-flex items-center gap-2 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 border border-zinc-200 hover:border-zinc-300 px-8 py-3.5 rounded-xl font-semibold text-sm transition-all shadow-sm">
+          <Link to="/contact" className="inline-flex items-center gap-2 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 border border-zinc-200 hover:border-zinc-300 px-8 py-3.5 rounded-xl font-semibold text-sm transition-all shadow-sm">
             Contact Us
             <i className="ph-bold ph-arrow-up-right"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

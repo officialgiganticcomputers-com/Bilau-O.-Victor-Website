@@ -1,5 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { GoogleGenAI } from '@google/genai';
+import { Link } from 'react-router-dom';
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
@@ -130,9 +131,9 @@ export default function BlueprintGenerator() {
                 
                 <div className="mt-8 pt-6 border-t border-zinc-800 text-center">
                   <p className="text-xs text-zinc-500 mb-4">Ready to implement this setup with professional guidance?</p>
-                  <a href="#contact" className="inline-block bg-white hover:bg-zinc-200 text-zinc-950 font-bold py-2.5 px-6 rounded-lg transition-all text-sm shadow-md">
+                  <Link to="/contact" className="inline-block bg-white hover:bg-zinc-200 text-zinc-950 font-bold py-2.5 px-6 rounded-lg transition-all text-sm shadow-md">
                     Let's Discuss Execution
-                  </a>
+                  </Link>
                 </div>
               </div>
             )}

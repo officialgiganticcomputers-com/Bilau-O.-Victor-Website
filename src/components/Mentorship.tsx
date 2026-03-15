@@ -1,3 +1,5 @@
+import CountUp from './CountUp';
+
 export default function Mentorship() {
   return (
     <section id="mentorship" className="py-32 bg-zinc-50 relative">
@@ -13,7 +15,7 @@ export default function Mentorship() {
 
             <div className="bg-zinc-950 rounded-3xl p-8 text-white relative overflow-hidden border border-zinc-800 shadow-2xl">
               <div className="absolute right-0 top-0 w-32 h-32 bg-amber-500/20 blur-[50px] rounded-full"></div>
-              <div className="text-6xl font-display font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-600 mb-2">40K+</div>
+              <CountUp end={40} suffix="K+" className="text-6xl font-display font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-600 mb-2 block" />
               <h4 className="text-xl font-bold font-display mb-2">Youth Empowered</h4>
               <p className="text-sm text-zinc-400 font-light">Mentored across tech workshops and high-profile gatherings globally.</p>
             </div>

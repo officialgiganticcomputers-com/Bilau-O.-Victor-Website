@@ -1,6 +1,6 @@
 export default function Leadership() {
   return (
-    <section id="leadership" className="py-32 bg-white border-t border-zinc-100">
+    <section id="leadership" className="py-24 bg-white border-t border-zinc-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           

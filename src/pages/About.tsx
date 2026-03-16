@@ -45,6 +45,18 @@ export default function About() {
       </div>
 
       <AboutMe />
+
+      {/* Cinematic Transition Band */}
+      <div 
+        className="w-full h-32 md:h-48 relative overflow-hidden"
+        style={{ background: 'linear-gradient(to bottom, #09090b 0%, #121a2f 40%, #1e2a4a 70%, #ffffff 100%)' }}
+      >
+        <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[80px]"></div>
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[80px]"></div>
+        <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-10"></div>
+      </div>
+
       <Vision />
       <Leadership />
     </motion.div>

@@ -1,6 +1,6 @@
 export default function Vision() {
   return (
-    <section id="vision" className="py-32 relative">
+    <section id="vision" className="pt-16 pb-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20 fade-in-section">
           <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-widest mb-4">Professional Vision</div>

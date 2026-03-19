@@ -33,10 +33,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <div className={`backdrop-blur-md rounded-2xl px-6 h-16 flex justify-between items-center transition-all duration-300 ${scrolled ? 'bg-white/90 shadow-lg border border-slate-200' : 'bg-white/80 shadow-sm border border-slate-200/50'}`}>
           <Link to="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
-            <img src="https://photos.fife.usercontent.google.com/pw/AP1GczNG-mwDkPAdkRSPHG-2eRcY7BEMOLU3nnTB64lvtS801vGkv2DSjh0=w403-h220-no?authuser=2" 
+            <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" 
                  alt="Bilau O. Victor Logo" 
                  loading="eager" decoding="async" fetchPriority="high"
-                 className="h-8 sm:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                 className="h-8 sm:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 rounded-full"
                  onError={(e) => { e.currentTarget.outerHTML = '<span class="font-display font-bold text-slate-900 text-lg tracking-tight">BILAU O. VICTOR</span>'; }} />
           </Link>
           

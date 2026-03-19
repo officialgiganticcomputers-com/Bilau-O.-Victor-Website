@@ -48,7 +48,7 @@ export default function BlogPostVMix() {
           {/* Author Block */}
           <div className="flex items-center justify-center md:justify-start gap-4 pt-6 border-t border-slate-100">
             <div className="w-12 h-12 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm">
-              <img src="https://photos.fife.usercontent.google.com/pw/AP1GczNG-mwDkPAdkRSPHG-2eRcY7BEMOLU3nnTB64lvtS801vGkv2DSjh0=w403-h220-no?authuser=2" alt="Bilau O. Victor" className="w-full h-full object-cover" />
+              <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" alt="Bilau O. Victor" className="w-full h-full object-cover" />
             </div>
             <div className="text-left">
               <p className="text-base font-bold text-slate-900">Bilau O. Victor</p>

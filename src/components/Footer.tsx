@@ -176,10 +176,10 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-zinc-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-500 fade-in-section">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            <img src="https://photos.fife.usercontent.google.com/pw/AP1GczNG-mwDkPAdkRSPHG-2eRcY7BEMOLU3nnTB64lvtS801vGkv2DSjh0=w403-h220-no?authuser=2" 
+            <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" 
                  alt="Bilau O. Victor Logo" 
                  loading="lazy" decoding="async"
-                 className="h-6 sm:h-8 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                 className="h-6 sm:h-8 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 rounded-full"
                  onError={(e) => { e.currentTarget.outerHTML = '<span class="font-display font-bold text-zinc-300 group-hover:text-white transition-colors">BILAU O. VICTOR</span>'; }} />
           </div>
           <p>&copy; 2026 Bilau Oluwatobi Victor. Designed by Gigantic Computers.</p>

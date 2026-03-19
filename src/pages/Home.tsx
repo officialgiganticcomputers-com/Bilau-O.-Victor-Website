@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import TrustedBy from '../components/TrustedBy';
 import Lightboxes from '../components/Lightboxes';
+import DevelopmentServices from '../components/DevelopmentServices';
 import { motion } from 'motion/react';
 import SEO from '../components/SEO';
 
@@ -60,6 +61,8 @@ export default function Home() {
       </section>
 
       <TrustedBy />
+
+      <DevelopmentServices />
 
       <Lightboxes 
         lightboxOpen={false}

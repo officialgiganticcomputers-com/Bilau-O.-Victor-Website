@@ -44,11 +44,11 @@ export default function SocialEngine() {
   return (
     <section id="social-engine" className="py-32 bg-zinc-950 relative overflow-hidden border-t border-zinc-800 text-white">
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      <div className="absolute left-0 bottom-0 w-[500px] h-[500px] bg-blue-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+      <div className="absolute left-0 bottom-0 w-[500px] h-[500px] bg-[#D9FF00]/10 blur-[150px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 fade-in-section">
-          <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-bold uppercase tracking-widest mb-4 shadow-[0_0_20px_rgba(59,130,246,0.15)]">Content Multiplier AI ✨</div>
+          <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-[#D9FF00]/10 text-[#D9FF00] border border-[#D9FF00]/20 text-xs font-bold uppercase tracking-widest mb-4 shadow-[0_0_20px_rgba(217,255,0,0.15)]">Content Multiplier AI ✨</div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Sermon-to-Social Engine</h2>
           <p className="text-lg text-zinc-400 leading-relaxed font-light">
             Paste a core message or sermon excerpt. Our Gemini-powered AI will act as your digital strategist, transforming it into a complete, platform-optimized social media campaign instantly.
@@ -60,18 +60,18 @@ export default function SocialEngine() {
             <form id="ai-social-form" className="space-y-6" onSubmit={handleSeSubmit}>
               <div>
                 <label className="block text-xs font-bold text-zinc-400 uppercase tracking-widest mb-2">Sermon Excerpt / Core Message</label>
-                <textarea id="se-message" required rows={5} className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-all resize-none font-light" placeholder="e.g. 'Faith is not the absence of fear, but the decision to move forward despite it...'" value={seMessage} onChange={e => setSeMessage(e.target.value)}></textarea>
+                <textarea id="se-message" required rows={5} className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-600 focus:outline-none focus:border-[#D9FF00] transition-all resize-none font-light" placeholder="e.g. 'Faith is not the absence of fear, but the decision to move forward despite it...'" value={seMessage} onChange={e => setSeMessage(e.target.value)}></textarea>
               </div>
               <div>
                 <label className="block text-xs font-bold text-zinc-400 uppercase tracking-widest mb-2">Ministry Tone & Vibe</label>
-                <select id="se-tone" required className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-all font-light appearance-none" value={seTone} onChange={e => setSeTone(e.target.value)}>
+                <select id="se-tone" required className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#D9FF00] transition-all font-light appearance-none" value={seTone} onChange={e => setSeTone(e.target.value)}>
                   <option value="Empowering & Prophetic">Empowering & Prophetic</option>
                   <option value="Academic & Theological">Academic & Theological</option>
                   <option value="Youthful & High-Energy">Youthful & High-Energy</option>
                   <option value="Calm & Pastoral">Calm & Pastoral</option>
                 </select>
               </div>
-              <button type="submit" id="se-submit" disabled={seState === 'loading'} className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white font-bold py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] disabled:opacity-70 disabled:cursor-not-allowed">
+              <button type="submit" id="se-submit" disabled={seState === 'loading'} className="w-full flex items-center justify-center gap-2 bg-[#D9FF00] hover:bg-[#b8d900] text-zinc-950 font-bold py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(217,255,0,0.3)] disabled:opacity-70 disabled:cursor-not-allowed">
                 {seState === 'loading' ? <><i className="ph-bold ph-spinner animate-spin"></i> Drafting Campaign...</> : <><i className="ph-bold ph-lightning"></i> Generate Campaign ✨</>}
               </button>
             </form>
@@ -81,7 +81,7 @@ export default function SocialEngine() {
             
             {seState === 'initial' && (
               <div id="se-initial-state" className="flex-1 flex flex-col items-center justify-center text-center opacity-60">
-                <i className="ph-thin ph-share-network text-6xl text-blue-500 mb-4"></i>
+                <i className="ph-thin ph-share-network text-6xl text-[#D9FF00] mb-4"></i>
                 <h4 className="font-display font-bold text-xl mb-2 text-white">Awaiting Message</h4>
                 <p className="text-sm text-zinc-400 max-w-sm font-light">Enter a sermon excerpt to generate an Instagram caption, Twitter thread, and YouTube description.</p>
               </div>
@@ -90,8 +90,8 @@ export default function SocialEngine() {
             {seState === 'loading' && (
               <div id="se-loading-state" className="flex-1 flex flex-col items-center justify-center text-center">
                 <div className="relative w-16 h-16 flex items-center justify-center mb-4">
-                  <div className="absolute inset-0 border-t-2 border-blue-500 rounded-full animate-spin"></div>
-                  <i className="ph-fill ph-sparkle text-2xl text-blue-500 animate-pulse"></i>
+                  <div className="absolute inset-0 border-t-2 border-[#D9FF00] rounded-full animate-spin"></div>
+                  <i className="ph-fill ph-sparkle text-2xl text-[#D9FF00] animate-pulse"></i>
                 </div>
                 <h4 className="font-display font-bold text-lg mb-1 text-white">Drafting Social Campaign...</h4>
                 <p className="text-xs text-zinc-400 font-mono">Calling Gemini API ✨</p>
@@ -110,7 +110,7 @@ export default function SocialEngine() {
               <div id="se-result-state" className="flex-1 flex flex-col text-zinc-300">
                 <div className="flex items-center justify-between mb-6 pb-4 border-b border-zinc-800">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 border border-blue-500/20">
+                    <div className="w-10 h-10 rounded-full bg-[#D9FF00]/10 flex items-center justify-center text-[#D9FF00] border border-[#D9FF00]/20">
                       <i className="ph-fill ph-rocket-launch text-xl"></i>
                     </div>
                     <div>

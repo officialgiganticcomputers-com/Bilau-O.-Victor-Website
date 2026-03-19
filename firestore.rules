@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: queries
+    // Document ID: auto-generated
+    // Fields:
+    //   - question: string (required) - The user's question
+    //   - response: string (optional) - The AI's response
+    //   - createdAt: timestamp (required) - Timestamp of creation
+    //   - userId: string (optional) - User ID if authenticated
+    //
+    // ===============================================================
+
+    // Helper Functions
+    function isAuthenticated() {
+       return request.auth != null;
+    }
+    
+    function hasRequiredFields(fields) {
+       return request.resource.data.keys().hasAll(fields);
+    }
+    
+    function isValidQuery(data) {
+      return data.question is string && data.question.size() > 0 && data.question.size() < 2000 &&
+             (!('response' in data) || (data.response is string && data.response.size() < 10000)) &&
+             (!('userId' in data) || (data.userId is string && data.userId.size() < 100)) &&
+             data.createdAt is timestamp;
+    }
+
+    match /queries/{queryId} {
+      // Allow anyone (even unauthenticated users) to submit a query since it's a public contact form
+      allow create: if hasRequiredFields(['question', 'createdAt']) && isValidQuery(request.resource.data);
+      
+      // Allow updates to add the response
+      allow update: if isValidQuery(request.resource.data) && 
+                    request.resource.data.question == resource.data.question &&
+                    request.resource.data.createdAt == resource.data.createdAt;
+                    
+      // Do not allow public reads of queries to protect privacy
+      allow read: if false; 
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import ICTExpertise from '../components/ICTExpertise';
+import PublishingServices from '../components/PublishingServices';
 import BlueprintGenerator from '../components/BlueprintGenerator';
 import SEO from '../components/SEO';
 
@@ -44,6 +45,7 @@ export default function ICTExpertisePage() {
       </div>
 
       <ICTExpertise />
+      <PublishingServices />
       <BlueprintGenerator />
     </motion.div>
   );

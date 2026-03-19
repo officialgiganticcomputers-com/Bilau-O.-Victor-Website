@@ -15,7 +15,7 @@ export default function MainLayout() {
   }, [pathname]);
 
   return (
-    <div className="bg-[#fcfbf9] text-slate-800 selection:bg-amber-500 selection:text-white font-sans min-h-screen flex flex-col">
+    <div className="bg-zinc-50 text-zinc-900 selection:bg-[#D9FF00] selection:text-zinc-950 font-sans min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
         <Outlet />

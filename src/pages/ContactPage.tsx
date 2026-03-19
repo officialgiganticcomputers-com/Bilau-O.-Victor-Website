@@ -2,6 +2,7 @@ import { useEffect, useState, FormEvent } from 'react';
 import { motion } from 'motion/react';
 import SocialEngine from '../components/SocialEngine';
 import SEO from '../components/SEO';
+import ChatAgent from '../components/ChatAgent';
 
 export default function ContactPage() {
   const [formSuccess, setFormSuccess] = useState(false);
@@ -135,6 +136,11 @@ export default function ContactPage() {
                   <p className="text-slate-500 text-sm">contact@oluwatobibilau.com</p>
                 </div>
               </a>
+            </div>
+            
+            <div className="mb-12">
+              <h2 className="text-3xl font-display font-bold text-slate-900 mb-6">Have Questions? Ask AI</h2>
+              <ChatAgent />
             </div>
             
             <SocialEngine />

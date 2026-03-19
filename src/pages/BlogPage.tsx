@@ -88,7 +88,19 @@ const blogPosts = [
   }
 ];
 
-const PostCard = ({ post, key }: { post: typeof blogPosts[0], key?: React.Key }) => (
+const getPostLink = (id: number) => {
+  if (id === 1) return "/blog/the-future-of-digital-ministry-in-africa";
+  if (id === 2) return "/blog/building-resilient-media-infrastructure-mega-churches";
+  if (id === 3) return "/blog/why-every-leader-needs-a-digital-strategy";
+  if (id === 4) return "/blog/mastering-vmix-live-production";
+  if (id === 5) return "/blog/the-intersection-of-faith-and-innovation";
+  if (id === 6) return "/blog/essential-gear-for-mobile-live-streaming";
+  if (id === 7) return "/blog/cultivating-a-culture-of-excellence-in-your-media-team";
+  if (id === 8) return "/blog/designing-acoustic-spaces-for-modern-worship";
+  return "#";
+};
+
+const PostCard: React.FC<{ post: typeof blogPosts[0] }> = ({ post }) => (
   <div className="group bg-white rounded-3xl shadow-sm border border-slate-200/60 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-500 h-full flex flex-col">
     <div className="relative aspect-[16/10] overflow-hidden">
       <img 
@@ -108,7 +120,7 @@ const PostCard = ({ post, key }: { post: typeof blogPosts[0], key?: React.Key })
         <span className="flex items-center gap-1"><i className="ph ph-clock"></i> {post.readTime}</span>
       </div>
       <h3 className="text-xl font-display font-bold text-slate-900 mb-3 leading-snug group-hover:text-blue-600 transition-colors">
-        <Link to={post.id === 4 ? "/blog/mastering-vmix-live-production" : "#"}>{post.title}</Link>
+        <Link to={getPostLink(post.id)}>{post.title}</Link>
       </h3>
       <p className="text-slate-600 text-sm leading-relaxed font-light mb-8 flex-grow">
         {post.excerpt}
@@ -116,11 +128,11 @@ const PostCard = ({ post, key }: { post: typeof blogPosts[0], key?: React.Key })
       <div className="flex items-center justify-between mt-auto pt-6 border-t border-slate-100">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full bg-slate-200 overflow-hidden border border-slate-300">
-            <img src="https://photos.fife.usercontent.google.com/pw/AP1GczNG-mwDkPAdkRSPHG-2eRcY7BEMOLU3nnTB64lvtS801vGkv2DSjh0=w403-h220-no?authuser=2" alt={post.author} className="w-full h-full object-cover" />
+            <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" alt={post.author} className="w-full h-full object-cover" />
           </div>
           <p className="text-xs font-bold text-slate-900">{post.author}</p>
         </div>
-        <Link to={post.id === 4 ? "/blog/mastering-vmix-live-production" : "#"} className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+        <Link to={getPostLink(post.id)} className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
           <i className="ph-bold ph-arrow-up-right"></i>
         </Link>
       </div>
@@ -213,7 +225,7 @@ export default function BlogPage() {
                     </span>
                   </div>
                   <h2 className="text-3xl font-display font-bold text-slate-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors">
-                    <Link to={filteredPosts[0].id === 4 ? "/blog/mastering-vmix-live-production" : "#"}>{filteredPosts[0].title}</Link>
+                    <Link to={getPostLink(filteredPosts[0].id)}>{filteredPosts[0].title}</Link>
                   </h2>
                   <p className="text-slate-600 text-lg mb-8 leading-relaxed font-light">
                     {filteredPosts[0].excerpt}
@@ -221,14 +233,14 @@ export default function BlogPage() {
                   <div className="flex items-center justify-between mt-auto pt-6 border-t border-slate-100">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-slate-200 overflow-hidden border border-slate-300">
-                        <img src="https://photos.fife.usercontent.google.com/pw/AP1GczNG-mwDkPAdkRSPHG-2eRcY7BEMOLU3nnTB64lvtS801vGkv2DSjh0=w403-h220-no?authuser=2" alt={filteredPosts[0].author} className="w-full h-full object-cover" />
+                        <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" alt={filteredPosts[0].author} className="w-full h-full object-cover" />
                       </div>
                       <div>
                         <p className="text-sm font-bold text-slate-900">{filteredPosts[0].author}</p>
                         <p className="text-xs text-slate-500">{filteredPosts[0].date}</p>
                       </div>
                     </div>
-                    <Link to={filteredPosts[0].id === 4 ? "/blog/mastering-vmix-live-production" : "#"} className="text-blue-600 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                    <Link to={getPostLink(filteredPosts[0].id)} className="text-blue-600 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                       Read Article <i className="ph-bold ph-arrow-right"></i>
                     </Link>
                   </div>

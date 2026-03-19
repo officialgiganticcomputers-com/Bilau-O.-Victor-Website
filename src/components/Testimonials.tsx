@@ -154,7 +154,7 @@ export default function Testimonials() {
                     {mainTestimonials[currentIndex].image !== "[INSERT_IMAGE_URL_HERE]" && mainTestimonials[currentIndex].image !== "[INSERT_PROFILE_IMAGE_URL]" ? (
                       <img src={mainTestimonials[currentIndex].image} alt={mainTestimonials[currentIndex].name} className="w-full h-full object-cover" />
                     ) : (
-                      mainTestimonials[currentIndex].initials
+                      <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" alt="Bilau Oluwatobi Victor" className="w-full h-full object-cover rounded-full" />
                     )}
                   </div>
                   <div>
@@ -218,9 +218,7 @@ export default function Testimonials() {
                 {testimonial.image !== "[INSERT_IMAGE_URL_HERE]" && testimonial.image !== "[INSERT_PROFILE_IMAGE_URL]" ? (
                   <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-zinc-800 text-amber-400 font-bold text-sm">
-                    {testimonial.initials}
-                  </div>
+                  <img src="https://i.ibb.co/k2P5xNWq/1000095077-02.jpg" alt="Bilau Oluwatobi Victor" className="w-full h-full object-cover rounded-full" />
                 )}
               </div>
               <div className="flex-1 min-w-0">

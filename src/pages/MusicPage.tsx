@@ -31,12 +31,12 @@ export default function MusicPage() {
         description="The musical identity, ministry music profile, and visual storytelling through sound by Gigantic." 
         url="https://bilauovictor.netlify.app/music"
       />
-      <div className="bg-gradient-to-b from-purple-50 to-white py-16 lg:py-24">
+      <div className="bg-gradient-to-b from-zinc-50 to-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-section">
-          <h1 className="text-5xl md:text-6xl font-display font-extrabold text-slate-900 mb-6 tracking-tight">
-            The Sound of <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Gigantic</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-zinc-900 mb-6 tracking-tight pb-2">
+            The Sound of <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-zinc-500">Gigantic</span>
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light">
+          <p className="text-xl text-zinc-600 max-w-3xl mx-auto font-light">
             My musical identity, ministry music profile, and visual storytelling through sound.
           </p>
         </div>

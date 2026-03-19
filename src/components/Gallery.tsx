@@ -5,8 +5,8 @@ export default function Gallery({ onOpenImage }: { onOpenImage: (index: number) 
     <section id="gallery" className="py-32 bg-white relative border-t border-zinc-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 fade-in-section">
-          <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-widest mb-4">Proof of Impact</div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-zinc-900 mb-6 tracking-tight">Case Studies & Media Gallery</h2>
+          <div className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-[#D9FF00]/10 text-[#D9FF00] text-xs font-bold uppercase tracking-widest mb-4">Proof of Impact</div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-zinc-900 mb-6 tracking-tight">Case Studies & Media Gallery</h2>
           <p className="text-lg text-zinc-500 leading-relaxed font-light">
             Moments from live productions, ministry training sessions, workshops, and digital media systems led by Oluwatobi Victor Bilau.
           </p>
@@ -19,7 +19,7 @@ export default function Gallery({ onOpenImage }: { onOpenImage: (index: number) 
             <img src="https://i.ibb.co/x8764ZFP/9.jpg" alt="Workshop Leadership" loading="lazy" decoding="async" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-              <div className="w-10 h-10 rounded-full bg-amber-500 text-zinc-950 flex items-center justify-center mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 shadow-glow">
+              <div className="w-10 h-10 rounded-full bg-[#D9FF00] text-zinc-950 flex items-center justify-center mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 shadow-glow">
                 <i className="ph-bold ph-arrows-out-simple"></i>
               </div>
               <h3 className="text-white font-display font-bold text-2xl mb-2">Workshop Leadership</h3>

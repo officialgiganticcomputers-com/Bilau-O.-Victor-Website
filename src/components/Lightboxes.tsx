@@ -47,14 +47,14 @@ export default function Lightboxes({
     <>
       {lightboxOpen && (
         <div id="lightbox" className="fixed inset-0 z-[100] bg-zinc-950/95 backdrop-blur-xl flex flex-col items-center justify-center opacity-100 visible transition-all duration-300" onClick={(e) => { if (e.target === e.currentTarget) onCloseImage(); }}>
-          <button id="lightbox-close" onClick={onCloseImage} className="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 bg-white/10 hover:bg-amber-500 text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
+          <button id="lightbox-close" onClick={onCloseImage} className="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 bg-white/10 hover:bg-[#D9FF00] text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
             <i className="ph-bold ph-x text-xl"></i>
           </button>
 
-          <button id="lightbox-prev" onClick={onPrevImage} className="absolute left-4 lg:left-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-amber-500 text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
+          <button id="lightbox-prev" onClick={onPrevImage} className="absolute left-4 lg:left-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-[#D9FF00] text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
             <i className="ph-bold ph-caret-left text-2xl"></i>
           </button>
-          <button id="lightbox-next" onClick={onNextImage} className="absolute right-4 lg:right-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-amber-500 text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
+          <button id="lightbox-next" onClick={onNextImage} className="absolute right-4 lg:right-10 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-[#D9FF00] text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
             <i className="ph-bold ph-caret-right text-2xl"></i>
           </button>
 
@@ -71,7 +71,7 @@ export default function Lightboxes({
 
       {videoLightboxOpen && (
         <div id="video-lightbox" className="fixed inset-0 z-[100] bg-zinc-950/95 backdrop-blur-xl flex flex-col items-center justify-center opacity-100 visible transition-all duration-300" onClick={(e) => { if (e.target === e.currentTarget) onCloseVideo(); }}>
-          <button onClick={onCloseVideo} className="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 bg-white/10 hover:bg-amber-500 text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
+          <button onClick={onCloseVideo} className="absolute top-6 right-6 lg:top-10 lg:right-10 w-12 h-12 bg-white/10 hover:bg-[#D9FF00] text-white hover:text-zinc-950 rounded-full flex items-center justify-center transition-colors duration-300 z-50">
             <i className="ph-bold ph-x text-xl"></i>
           </button>
 
